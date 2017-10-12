@@ -9,11 +9,11 @@ An extremely handy recipe for when you want to make a DNS prefetch file
 - Now inspect _that_ (either right clicking, keyboard shortcuts or using file menu system)
 - Type the following command
 
-`UI.panels.network._networkLogView._dataGrid._rootNode.dataGrid._rootNode.dataGrid._rootNode._flatNodes.map(n => n._request._path).join('\n');`
+`UI.panels.network._networkLogView._dataGrid._rootNode.dataGrid._rootNode.dataGrid._rootNode._flatNodes.map(n => n._request._parsedURL.host).join('\n');`
 
 or
 
-`copy(UI.panels.network._networkLogView._dataGrid._rootNode.dataGrid._rootNode.dataGrid._rootNode._flatNodes.map(n => n._request._path).join('\n'));`
+`copy(UI.panels.network._networkLogView._dataGrid._rootNode.dataGrid._rootNode.dataGrid._rootNode._flatNodes.map(n => n._request._parsedURL.host).join('\n'));`
 
 if you want it in your clipboard.
 
